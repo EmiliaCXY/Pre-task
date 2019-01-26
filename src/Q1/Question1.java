@@ -60,11 +60,11 @@ public class Question1 extends JPanel{
     // EFFECT: chop the input into fragments of k bases
     private ArrayList<String> slice(String input, int k) {
         ArrayList<String> fragments = new ArrayList<>();
-        for(int x = 0; x<input.length();x++){
-            if(x+k<input.length()){
-                String frag = input.substring(x,x+k);
-                fragments.add(frag);
-            }
+        for(int x = 0; x+k<=input.length();x++){
+
+            String frag = input.substring(x,x+k);
+            fragments.add(frag);
+
         }
         return fragments;
     }
@@ -80,8 +80,9 @@ public class Question1 extends JPanel{
                 }
             }
         }
-        results.clear();
-        results.addAll(resultNoDuplicate);
+        results = resultNoDuplicate;
+        //results.clear();
+        //results.addAll(resultNoDuplicate);
 
     }
 
@@ -158,7 +159,7 @@ public class Question1 extends JPanel{
             if(resultContent.getText().equals("")){
                 resultContent.setText(results.get(i));
             }else{
-                resultContent.setText(resultContent.getText()+"\t" + results.get(i));
+                resultContent.setText(resultContent.getText()+"\n" + results.get(i));
             }
 
         }
