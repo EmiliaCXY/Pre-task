@@ -145,14 +145,14 @@ public class Question2 extends JPanel {
             if(resultContent.getText().equals("")){
                 resultContent.setText(print(results.get(i)));
             }else{
-                resultContent.setText(resultContent.getText()+"\t" + print(results.get(i)));
+                resultContent.setText(resultContent.getText()+"\n" + print(results.get(i)));
             }
 
         }
     }
 
     private String print(Point p){
-        return "("+p.getX() + "," + p.getY()+ ")";
+        return "("+(int)p.getX() + "," + (int)p.getY()+ ")";
     }
 
 }
