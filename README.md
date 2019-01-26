@@ -1,3 +1,11 @@
+# README
+This program includes graphic user interaction. When you open the program, run "mainGUI", and there will be two tabs -- "Question1" and "Question2". There will be a sample input for each question, and you can modify the inputs. After clicking "submit", the results will be shown under "result" panel on the right.
+If you want to see the code for Question1 and Question2, you can go to the class "Question1" and "Question2". The methods implemented at the top are the main methods used for the pretask. The methods at the bottom are used for GUI design.
+Thank you for reading.
+
+Xinyi (Emilia)
+
+
 # Instructions
 1. Fork this repository
 2. Complete the questions in any language of your choice
